@@ -1,0 +1,293 @@
+﻿body {
+    width:100%;
+    height:100%;
+    cursor: pointer;
+}
+
+.fa{
+    width:740px;
+    margin:0 auto;
+
+}
+.top{
+    margin:20px 0;
+
+}
+#drawDiv {
+    position: absolute;
+    height: 768px;
+    width: 100%;
+    box-shadow: 0px 20px 20px 0px #888888;
+    background: url("/images/ShowModelPage/background.jpg");
+    z-index: 2;
+}
+#showfaceDiv {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    left: 0;
+    top: 10%;
+    display: none;
+    z-index: 0;
+}
+
+#cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#ChooseColor {
+    position:absolute;
+    bottom:262px;
+	left:350px;
+}
+#paper {
+    position:absolute;
+    
+    z-index:20;
+}
+#color {
+	position:absolute;
+    height:160px;
+    width:600px;
+    background:url("/images/ShowModelPage/paperBG.png") no-repeat;
+    z-index:5;
+}
+#color, ul, li {
+    margin:0;
+    padding:0;
+    z-index:10;
+}
+#color ul{
+    list-style-type:none;
+    position:absolute;
+    left:0px;
+}
+#color li{
+    display: block;
+}
+
+#color a{
+	position:absolute;
+    width:50px;
+    height:45px;
+    border:1px solid #fff;
+    border-radius:5px;
+    z-index:5;
+}
+#color .i1{
+    background:#000000;
+	left:130px;
+    top:16px;
+}
+#color .i2{
+    background:#FF0000;
+	left:190px;
+    top:16px;
+}
+#color .i3{
+    background:#80FF00;
+	left:250px;
+    top:16px;
+}
+#color .i4{
+    background:#00FFFF;
+	left:310px;
+    top:16px;
+}
+#color .i5{
+    background:#808080;
+	left:170px;
+    top:68px;
+}
+#color .i6{
+    background:#FF8000;
+	left:230px;
+    top:68px;
+}
+#color .i7{
+    background:#408080;
+	left:290px;
+    top:68px;
+}
+#color .i8{
+    background:#8000FF;
+	left:350px;
+    top:68px;
+}
+#color .i9{
+    background:#CCCC00;
+	left:410px;
+    top:68px;
+}
+#canvas{
+    background: rgba(255,255,255, .5);
+    cursor:default;
+    position:absolute;
+    top:85px;
+    left:355px;
+}
+
+#toolDiv {
+    position: absolute;
+    left: 1100px;
+    top: 90px;
+    width: 200px;
+    height: 200px;
+}
+#toolDiv div {
+    position:absolute;
+    width: 70px;
+    height: 40px;
+    z-index:5;
+}
+
+#eraser {
+    top:0px;
+    left:0px;
+    background: url("/images/ShowModelPage/eraser.png") no-repeat;
+}
+#clear {
+    top: 50px;
+    left: 0px;
+    background: url("/images/ShowModelPage/clear.png") no-repeat;
+    
+}
+#revocation {
+    top: 100px;
+    left: 0px;
+    background: url("/images/ShowModelPage/revocation.png") no-repeat;
+}
+#imgurl {
+    top: 150px;
+    left: 0px;
+    background: url("/images/ShowModelPage/save.png") no-repeat;
+}
+#faceFilter {
+    top: 200px;
+    left: 0px;
+    background: url("/images/ShowModelPage/faceFilter.png") no-repeat;
+}
+#make {
+    top: 0px;
+    left: 100px;
+    width: 70px;
+    height: 40px;
+    background: url("/images/ShowModelPage/defactbtn.png") no-repeat;
+}
+
+#pen {
+    position:absolute;
+    width:196px;
+    height:300px;
+    left:75px;
+    top:301px;
+
+    -webkit-animation-name: showPen;
+    -webkit-animation-delay: .5s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-duration: 1.5s;
+}
+
+@-webkit-keyframes showPen {
+    from {
+    }
+    50% {
+        -ms-transform: translateY(100px);
+        -webkit-transform: translateY(100px);
+    }
+    to {
+    }
+}
+
+#faces {
+    position: absolute;
+    top:200px;
+    left:500px;
+    width: 600px;
+    height: 200px;
+    display: none;
+    overflow:hidden;
+    z-index: 15;
+    background: rgba(121,121,121,.4);
+}
+#facesTouch {
+    position: absolute;
+    left:0px;
+    top:10px;
+    width:700px;
+    height: 180px;
+}
+#facesTouch div {
+    position: absolute;
+    top:10px;
+    width: 119px;
+    height: 160px;
+    z-index: 15;
+}
+#faceBtn1 {
+    left: 20px;
+    background:url("/images/ShowModelPage/guanyu-small.png") no-repeat;
+}
+#faceBtn2 {
+    left: 170px;
+    background:url("/images/ShowModelPage/guanyu1-small.png") no-repeat;
+}
+#faceBtn3 {
+    left: 320px;
+    background:url("/images/ShowModelPage/guanyu2-small.png") no-repeat;
+}
+#faceBtn4 {
+    left: 460px;
+    background:url("/images/ShowModelPage/guanyu3-small.png") no-repeat;
+}
+.showFaces {
+    -webkit-animation-name: showFaces;
+    -webkit-animation-duration:1s;
+    -webkit-animation-timing-function:ease-in-out ;
+}
+@-webkit-keyframes showFaces {
+    from {
+        -webkit-transform: translate(500px, 300px) scale(.1, .1);
+        opacity:0.0;
+    }
+    to {
+        -webkit-transform: translate(0px, 0px) scale(1, 1);
+        opacity:1.0;
+    }
+}
+.hideFaces {
+    -webkit-animation-name: hideFaces;
+    -webkit-animation-duration:1s;
+    -webkit-animation-timing-function:ease-in-out ;
+
+    display:none;
+}
+@-webkit-keyframes hideFaces {
+    from {
+        -webkit-transform: translate(0px, 0px) scale(1, 1);
+        opacity:1.0;
+    }
+    to {
+        -webkit-transform: translate(500px, 300px) scale(.1, .1);
+        opacity:0.0;
+    }
+}
+#removeFilter {
+    position:absolute;
+    width: 119px;
+    height: 160px;
+    top: 10px;
+    left: 600px;
+    background: url("/images/ShowModelPage/removeFilterBtn.png") no-repeat;
+}
+
+#face {
+    position: absolute;
+    left: 550px;
+    top: 90px;
+    width:297px;
+    height:399px;
+    display:none;
+}

@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>QjO HomePage</title>
+
+        <!-- QjO references -->
+        <link href="../css/HomePage.css" rel="stylesheet" />
+        <script src="../js/HomePage.js"></script>
+        <script src="../js/PageControl.js"></script>
+        <script src="../js/AppBarsEvent.js"></script>
+        <script src="../js/PageControlState.js"></script>
+    </head>
+    <body>
+        <audio id="backSound" src="../source/sound/backSound.mp3" loop="loop"></audio>
+        <!-- App Page -->
+        <div id="contentPage" data-win-control="HomePageManager.HomePageNavigator" data-win-options="{model: '/html/ModelPage.html'}"></div>
+        <!-- App bars -->
+        <div id="appbar" data-win-control="WinJS.UI.AppBar" aria-label="Command Bar" data-win-options="{
+            commands:[
+                {id:'Home', label:'Home', icon:'&#xE10F;', section:'global'},
+                {id:'Introduce', label:'Introduce', icon:'&#xE181;', section:'global'},
+                {id:'About', label:'About us', icon:'&#xE10C;', section:'global'}
+            ]}"></div>
+    </body>
+</html>

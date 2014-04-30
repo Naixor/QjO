@@ -1,0 +1,19 @@
+{
+	"app": {
+		"launch": {
+			"local_path": "QjO.html"
+		}
+	},
+	"icons": {
+		"128": "128.png"
+	},
+	"manifest_version": 2,
+	"name": "水墨京剧",
+	"description": "Beijing Opera by Werter-Ink",
+	"version": "1.0",
+	"permissions" : [
+		"tabs",
+		"unlimitedStorage", 
+		"notifications"
+	]
+}

@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+        <title>ShowModelPage</title>
+        <!-- APP reference -->
+        <script type="text/javascript" src="/logic/jquery.js"></script>
+        <script type="text/javascript" src="/js/ShowModelPage.js"></script>
+        <script type="text/javascript" src="/logic/jquery.js"></script>
+        <script type="text/javascript" src="/logic/three.min.js"></script>
+        <script type="text/javascript" src="/logic/OBJLoader.js"></script>
+        <script type="text/javascript" src="/js/3dfaces.js"></script>
+
+		<link rel="stylesheet" href="/css/ShowModelPage.css" />
+    </head>
+    
+<body>
+    <audio id="clickSound" src="/source/sound/click.wav"></audio>
+    <audio id="onclickSound" src="/source/sound/onclick.mp3"></audio>
+    <div id="drawDiv">
+        <div id="faces">
+            <div id="facesTouch">
+                <div id="faceBtn1" style=""></div>
+                <div id="faceBtn2" style=""></div>
+                <div id="faceBtn3" style=""></div>
+                <div id="faceBtn4" style=""></div>
+                <div id="removeFilter"></div>
+            </div>
+        </div>
+
+        <div id="face"></div>
+
+        <div class="faceFilter">
+            <div class="top">
+                <div id="ChooseColor">
+                    <div id="paper">
+                        <ul>
+                            <li><img src="/images/ShowModelPage/1.png" /></li>
+                            <li><img src="/images/ShowModelPage/2.png" /></li>
+                            <li><img src="/images/ShowModelPage/3.png" /></li>
+                            <li><img src="/images/ShowModelPage/4.png" /></li>
+                            <li><img src="/images/ShowModelPage/5.png" /></li>
+                            <li><img src="/images/ShowModelPage/6.png" /></li>
+                            <li><img src="/images/ShowModelPage/7.png" /></li>
+                            <li><img src="/images/ShowModelPage/8.png" /></li>
+                            <li><img src="/images/ShowModelPage/9.png" /></li>
+                            <li><img src="/images/ShowModelPage/10.png" /></li>
+                            <li><img src="/images/ShowModelPage/11.png" /></li>
+                            <li><img src="/images/ShowModelPage/12.png" /></li>
+                            <li><img src="/images/ShowModelPage/13.png" /></li>
+                            <li><img src="/images/ShowModelPage/14.png" /></li>
+                            <li><img src="/images/ShowModelPage/15.png" /></li>
+                            <li><img src="/images/ShowModelPage/16.png" /></li>
+                            <li><img src="/images/ShowModelPage/17.png" /></li>
+                            <li><img src="/images/ShowModelPage/18.png" /></li>
+                        </ul>
+                    </div>
+                    <div id="color">
+                        <a class="i1"></a>
+                        <a class="i2"></a>
+                        <a class="i3"></a>
+                        <a class="i4"></a>
+                        <a class="i5"></a>
+                        <a class="i6"></a>
+                        <a class="i7"></a>
+                        <a class="i8"></a>
+                        <a class="i9"></a>
+                    </div>
+                </div>
+                <div id="toolDiv">
+                    <div id="eraser" style=""></div>
+                    <div id="clear" style=""></div>
+                    <div id="revocation" style=""></div>
+                    <div id="imgurl" style=""></div>
+                    <div id="faceFilter"></div>
+                    <div id="make"></div>
+                </div>
+            </div>
+            <canvas id="canvas" width="730" height="420">
+            </canvas>
+        </div>
+        <div id="pen">
+        </div>
+    </div>
+    <div id="showfaceDiv">
+        <canvas id = "cover"></canvas>
+        <div id="ddiv"></div>
+    </div>
+</body>
+</html>

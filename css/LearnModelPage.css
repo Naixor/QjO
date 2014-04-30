@@ -1,0 +1,396 @@
+﻿body {
+    width:100%;
+    height:100%;
+    cursor: pointer;
+    background: url("/images/LearnModelPage/background.jpg") no-repeat;
+}
+
+img {
+    width:100%;
+    height: 100%;
+}
+
+#backGB {
+    position:absolute; 
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    overflow: hidden;
+    z-index: 1;
+}
+#backIMG1 {
+    background:url("/images/LearnModelPage/bgM.png") no-repeat;
+    -webkit-animation-name: moveBG1;
+    -webkit-animation-duration: 100s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-direction: normal;
+    -webkit-animation-iteration-count:infinite;
+}
+#backIMG2 {
+    background:url("/images/LearnModelPage/bgM.png") no-repeat;
+    -webkit-animation-name: moveBG2;
+    -webkit-animation-duration: 100s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-direction: normal;
+    -webkit-animation-iteration-count:infinite;
+}
+.bg {
+    position:absolute;
+    width:2797px;
+    height:768px;
+}
+@-webkit-keyframes moveBG1 {
+    from {
+        top:0px;
+        left:-100px;
+    }
+    to {
+        top:0px;
+        left:-2897px;
+    }
+}
+
+@-webkit-keyframes moveBG2 {
+    from {
+        top:0px;
+        left:2697px;
+    }
+    to {
+        top:0px;
+        left:-100px;
+    }
+}
+
+#mainDiv {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 400%;
+    height: 100%;
+    z-index: 3;
+}
+.prev {
+    -webkit-transform: translateX(1366px);
+    -webkit-transition: all 1s ease-in-out;
+}
+.next {
+    -webkit-transform: translateX(-1366px);
+    -webkit-transition: all 1s ease-in-out;
+}
+#mainDiv ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#mainDiv li {
+    float: left;
+    width:100%;
+    height: 100%;
+}
+#Person1 {
+    position: absolute;
+    top: 150px;
+    left:400px;
+    width: 368px;
+    height: 584px;
+    background: url("/images/LearnModelPage/Person/person1.png") no-repeat;
+    z-index:14;
+}
+#Person2 {
+    position: absolute;
+    top: 150px;
+    left:1766px;
+    width: 368px;
+    height: 584px;
+    background: url("/images/LearnModelPage/Person/person2.png") no-repeat;
+}
+#Person3 {
+    position: absolute;
+    top: 150px;
+    left:3132px;
+    width: 368px;
+    height: 584px;
+    background: url("/images/LearnModelPage/Person/person3.png") no-repeat;
+}
+#Person4 {
+    position: absolute;
+    top: 150px;
+    left:4498px;
+    width: 368px;
+    height: 584px;
+    background: url("/images/LearnModelPage/Person/person4.png") no-repeat;
+}
+.personLeft1 {
+    -webkit-transform: translateX(-130px);
+    -webkit-transition: all 1.2s ease-in-out 0.3s;
+}
+.personRight {
+    -webkit-transform: translateX(0px);
+    -webkit-transition: all 0.8s ease-in-out 0.3s;
+}
+.personLeft2 {
+    -webkit-transform: translateX(-300px);
+    -webkit-transition: all 0.8s ease-in-out 0.3s;
+}
+
+
+#leverDiv {
+    position: absolute;
+    top: 120px;
+    left: -250px;
+    width: 380px;
+    height: 184px;
+    z-index: 5;
+    background: url("/images/LearnModelPage/lever.png") no-repeat;  
+}
+#flag {
+    position: absolute;
+    overflow: hidden;
+    top: 160px;
+    left: 50px;
+    width: 200px;
+    height:350px;
+    z-index: 4;
+}
+#innerFlag {
+    position: absolute;
+    top:0px;
+    left:2px;
+    width:178px;
+    height: 293px;  
+    z-index:4;
+    border-radius: 0px 0px 13px 13px;
+    border-bottom: 3px solid rgba(255,255,255,.5);
+    border-right: 5px solid rgba(255,255,255,.25);
+    border-left: 3px solid rgba(255,255,255,.25);
+}
+.leverRight {
+    -webkit-transform: translateX(230px);
+    -webkit-transition: all 0.4s ease-in-out;
+}
+.leverLeft {
+    -webkit-transform: translateX(0px);
+    -webkit-transition: all 0.4s ease-in-out 0.4s;
+}
+
+#flagDiv {
+    position: absolute;
+    top: -300px;
+    left: 0px;
+    height: 300px;
+    width: 190px;
+    background: rgba(199,199,199,.6);
+    z-index:6;
+    border-radius: 0px 0px 15px 15px;
+    box-shadow: 0px, 2px, 4px, rgba(0,0,0,0.5);
+    border-bottom: 6px solid rgba(0,0,0,0.25);
+    border-right: 3px solid rgba(0,0,0,0.20);
+}
+.flagDown {
+    -webkit-transform: translateY(300px);
+    -webkit-transition: all 0.4s ease-in-out 0.6s;
+}
+.flagUp {
+    -webkit-transform: translateY(0px);
+    -webkit-transition: all 0.4s ease-in-out;
+}
+
+.btn {
+    position:absolute;
+    width: 100px;
+    height: 60px;
+    left: 45px;
+}
+#personBtn {
+    top: 40px;
+    background: url("/images/LearnModelPage/personBtn.png") no-repeat;
+}
+#storyBtn {
+    top:110px;
+    background: url("/images/LearnModelPage/storyBtn.png") no-repeat;
+}
+#faceBtn {
+    top:180px;
+    background: url("/images/LearnModelPage/faceBtn.png") no-repeat;
+}
+
+#personIntroDiv {
+    position:absolute;
+    width: 550px;
+    height: 644px;
+    top: 50px;
+    left:1366px;
+    background: url("/images/LearnModelPage/personIntroBG.png");
+    z-index: 20;
+}
+.showPersonIntro {
+    -webkit-transform: translateX(-786px);
+    -webkit-transition: all 0.5s ease-in-out;
+}
+.hidePersonIntro {
+    -webkit-transform: translateX(0px);
+    -webkit-transition: all 0.5s ease-in-out;
+}
+#personInfo {
+    position: absolute;
+    top:100px;
+    left:100px;
+    width: 335px;
+    height: 440px;
+    z-index:15;
+    background: rgba(80,80,80,.4);
+    font-size: 22px;
+}
+
+#storyIntroDiv {
+    position: absolute;
+    top:75px;
+    left:420px;
+    width:932px;
+    height:692px;
+    background: url("/images/LearnModelPage/storyBG.png") no-repeat;
+    z-index:15;
+    display: none;
+    opacity: 0.0;
+}
+#story {
+    position: absolute;
+    top: 114px;
+    left:163px;
+    width:630px;
+    height:470px;
+}
+.showStory {
+    -webkit-animation-name:showStory;
+    -webkit-animation-duration:1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 1s;
+}
+@-webkit-keyframes showStory {
+    from {
+        opacity:0.0;
+    }
+    to {
+        opacity:1.0;
+    }
+}
+.hideStory {
+    -webkit-animation-name: hideStory;
+    -webkit-animation-duration:1s;
+    -webkit-animation-timing-function: linear;
+}
+@-webkit-keyframes hideStory {
+    from {
+        opacity:1.0;
+    }
+    to {
+        opacity:0.0;
+        display:none;
+    }
+}
+
+#faceIntroDiv {
+    position: absolute;
+    top: -576px;
+    left: 0;
+    width: 1366px;
+    height: 576px;
+    display: none;
+    background: url("/images/LearnModelPage/Face/faceBg.png") no-repeat;
+    z-index:15;
+}
+.showFace {
+    -webkit-animation-name:showFace;
+    -webkit-animation-duration:1s;
+    -webkit-animation-timing-function: ease-in-out;
+}
+.hideFace {
+    -webkit-transform: tranlateY(0px);
+    -webkit-transition: all 1s ease-in-out;
+}
+@-webkit-keyframes showFace {
+    from {    
+    }
+    60% {
+        top: 126px;
+    }
+    to {
+        top: 96px;
+    }
+}
+#faceIntroDiv div {
+    position:absolute;
+    top:600px;
+    left: 0;
+    width: 1366px;
+    height: 576px;
+}
+#info1 {
+    opacity:0.0;
+    background:url(/images/LearnModelPage/Face/1.png) no-repeat;
+    -webkit-animation-name: showFaceInfo;
+    -webkit-animation-delay:0.5s;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+}
+#info2 {
+    opacity:0.0;
+    background:url(/images/LearnModelPage/Face/2.png) no-repeat;
+    -webkit-animation-name: showFaceInfo;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+}
+#info3 {
+    opacity:0.0;
+    background:url(/images/LearnModelPage/Face/3.png) no-repeat;
+    -webkit-animation-name: showFaceInfo;
+    -webkit-animation-delay:1.5s;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+}
+#info4 {
+    opacity:0.0;
+    background:url(/images/LearnModelPage/Face/4.png) no-repeat;
+    -webkit-animation-name: showFaceInfo;
+    -webkit-animation-delay:2s;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+}
+@-webkit-keyframes showFaceInfo {
+    from {
+        -webkit-transform:translateY(100px);
+        opacity:0.0;
+    }
+    to {
+        -webkit-transform:translateY(0px);
+        opacity:1.0;
+    }
+}
+
+#lightDiv {
+    position: absolute;
+    width:100%;
+    height: 100%;
+    top:0;
+    left:0;
+    z-index:13;
+    background: rgba(80,80,80,0.6);
+    display:none;
+
+    -webkit-animation-name:lightOn;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+}
+@-webkit-keyframes lightOn {
+    from {
+        opacity:0.0;
+    }
+    to {
+        opacity:0.6;
+    }
+}
+
